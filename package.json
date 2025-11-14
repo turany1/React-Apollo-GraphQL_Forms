@@ -8,11 +8,13 @@
     "packages/*"
   ],
   "scripts": {
-    "build" : "npm run build --workspaces",
-    "dev:common": "npm run dev -w common",
+    "build:common": "npm run build -w @react-express-graphql-forms/common",
+    "build:workspaces": "npm run build --workspaces --if-present",
+    "build": "npm run build:common && npm run build:workspaces",
+    "dev:common": "npm run dev -w @react-express-graphql-forms/common",
     "dev:server": "npm run dev -w server",
     "dev:client": "npm run dev -w client",
-    "dev": "npm-run-all --parallel dev:*"  
+    "dev": "npm-run-all --parallel dev:*"
   },
   "repository": {
     "type": "git",

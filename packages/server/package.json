@@ -11,12 +11,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^3.13.0",
-    "common": "1.0.0",
-    "graphql": "^16.8.1"
+    "@apollo/server": "^5.1.0",
+    "body-parser": "^1.20.3",
+    "@react-express-graphql-forms/common": "file:../common",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "graphql": "^16.8.1",
+    "http": "^0.0.1-security"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12",
+    "@types/cors": "^2.8.19",
+    "@types/node": "^20.19.25",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.5"
   }

@@ -1,7 +1,5 @@
-import { gql } from 'apollo-server';
-
 // This schema must mirror the types in 'common'
-export const typeDefs = gql`
+export const typeDefs =`
   enum QuestionType {
     TEXT
     MULTIPLE_CHOICE

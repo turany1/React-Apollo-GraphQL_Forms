@@ -1,0 +1,63 @@
+# 1. Homepage: Get all forms
+query GetForms {
+  forms {
+    id
+    title
+    description
+  }
+}
+
+# 2. Form Filler & Responses: Get a single form's structure
+query GetFormById($id: ID!) {
+  form(id: $id) {
+    id
+    title
+    description
+    questions {
+      id
+      text
+      type
+      options
+    }
+  }
+}
+
+# 3. Form Builder: Create a new form
+# Matches your schema (no "input" type)
+mutation CreateForm(
+  $title: String!
+  $description: String
+  $questions: [QuestionInput!]!
+) {
+  createForm(
+    title: $title
+    description: $description
+    questions: $questions
+  ) {
+    id
+    title
+    description
+  }
+}
+
+# 4. Form Filler: Submit a response
+# Matches your schema (no "input" type)
+mutation SubmitResponse($formId: ID!, $answers: [AnswerInput!]!) {
+  submitResponse(formId: $formId, answers: $answers) {
+    id
+    formId
+  }
+}
+
+# 5. Form Responses: Get all responses for a form
+query GetResponsesForForm($formId: ID!) {
+  responses(formId: $formId) {
+    id
+    # 'submittedAt' was removed as it's not in your schema
+    answers {
+      questionId
+      value
+      values
+    }
+  }
+}
