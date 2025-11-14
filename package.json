@@ -1,0 +1,32 @@
+{
+  "name": "formapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build" : "npm run build --workspaces",
+    "dev:common": "npm run dev -w common",
+    "dev:server": "npm run dev -w server",
+    "dev:client": "npm run dev -w client",
+    "dev": "npm-run-all --parallel dev:*"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turany1/React-Express-GraphQL_Forms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/turany1/React-Express-GraphQL_Forms/issues"
+  },
+  "homepage": "https://github.com/turany1/React-Express-GraphQL_Forms#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
