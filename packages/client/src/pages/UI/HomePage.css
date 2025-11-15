@@ -9,11 +9,13 @@
 }
 
 .homepage-title {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-top: 0;
     margin-bottom: 1.5rem;
-    color: #333;
-    font-size: 2em;
+    border-bottom: 3px solid #bfdbfe;
+    padding-bottom: 10px;
 }
 
 .create-button-link {
@@ -59,7 +61,12 @@
 }
 
 .message-empty {
+    text-align: center;
+    padding: 30px;
+    background-color: #eef2ff;
+    border: 1px dashed #c7d2fe;
+    border-radius: 12px;
+    color: #4f46e5;
     font-style: italic;
-    color: #666;
-    background-color: #f0f0f0;
+    margin-bottom: 20px;
 }

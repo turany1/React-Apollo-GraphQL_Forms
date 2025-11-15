@@ -37,7 +37,7 @@
 }
 
 .action-fill {
-    color: #28a745; /* Green */
+    color: #22c55e;
 }
 
 .action-fill:hover {
@@ -45,7 +45,7 @@
 }
 
 .action-answers {
-    color: #ffc107; /* Yellow/Orange */
+    color: #f59e0b;
 }
 
 .action-answers:hover {
