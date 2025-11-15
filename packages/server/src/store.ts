@@ -1,5 +1,5 @@
 // Import our shared types!
-import { Form, Response } from 'common';
+import { Form, Response } from '@react-express-graphql-forms/common';
 
 // Our in-memory "database"
 const forms: Form[] = [];
