@@ -12,7 +12,6 @@ import {
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000/graphql';
 
-// Тег для інвалідації списку форм
 const formListTag = { type: 'Form' as const, id: 'LIST' };
 
 export const apiSlice = createApi({
@@ -59,7 +58,6 @@ export const apiSlice = createApi({
         providesTags: (_result, _error, id) => [{ type: 'Form', id }],
     }),
 
-    // 3. МУТАЦІЯ: Створення нової форми
     createForm: builder.mutation<CreateFormResponse, CreateFormArgs>({
         query: (newFormData) => ({
             document:`
@@ -75,7 +73,6 @@ export const apiSlice = createApi({
         invalidatesTags: [formListTag],
     }),
 
-    // 4. МУТАЦІЯ: Надсилання відповіді на форму
     submitResponse: builder.mutation<SubmitResponseResponse, SubmitResponseArgs>({
         query: ({ formId, answers }) => ({
             document: `
@@ -95,7 +92,6 @@ export const apiSlice = createApi({
         }),
     }),
     
-    // 5. QUERY: Отримання відповідей для форми
     getFormResponses: builder.query<GetFormResponsesResponse, string>({ 
         query: (formId) => ({
             document: `
@@ -117,7 +113,6 @@ export const apiSlice = createApi({
   }),
 });
 
-// Експортуємо хуки
 export const { 
     useGetFormsQuery, 
     useGetFormQuery, 

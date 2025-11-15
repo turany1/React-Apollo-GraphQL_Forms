@@ -1,0 +1,140 @@
+/*
+  Styles for QuestionCard: Individual question styling
+*/
+.question-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #3b82f6; /* Blue accent border */
+    transition: box-shadow 0.2s;
+}
+
+.question-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.question-label {
+    font-weight: 700;
+    color: #4b5563;
+    font-size: 1.1rem;
+}
+
+.type-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: 15px;
+}
+.type-tag.type-text {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+.type-tag.type-multiple_choice {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+.type-tag.type-checkbox {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+.type-tag.type-date {
+    background-color: #e5e7eb;
+    color: #4b5563;
+}
+
+.delete-btn {
+    background-color: #ef4444; /* Red */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.delete-btn:hover {
+    background-color: #dc2626;
+}
+
+.input-label {
+    display: block;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+.question-text-input,
+.options-textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    resize: vertical;
+}
+
+.question-text-input:focus,
+.options-textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.options-group {
+    margin-top: 15px;
+}
+
+
+.answer-placeholder-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px dashed #9ca3af;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #6b7280;
+    pointer-events: none; /* Disable interaction */
+}
+
+/* Options Preview */
+.placeholder-option {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.radio-dot,
+.checkbox-box {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #3b82f6;
+    background-color: #ffffff;
+    margin-right: 8px;
+}
+
+.checkbox-box {
+    border-radius: 3px;
+}
+
+.placeholder-empty {
+    color: #9ca3af;
+    font-style: italic;
+}

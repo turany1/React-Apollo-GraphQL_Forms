@@ -1,0 +1,68 @@
+.question-list-wrapper {
+    margin-bottom: 2rem;
+}
+
+.question-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.empty-list-message {
+    text-align: center;
+    padding: 30px;
+    background-color: #eef2ff;
+    border: 1px dashed #c7d2fe;
+    border-radius: 12px;
+    color: #4f46e5;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.add-question-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 15px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.add-question-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-question-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.add-question-btn svg {
+    stroke-width: 2.5;
+}
+
+.primary-btn {
+    background-color: #22c55e;
+    color: white;
+}
+.warning-btn {
+    background-color: #f59e0b;
+    color: white;
+}
+.info-btn {
+    background-color: #3b82f6;
+    color: white;
+}
+.secondary-btn {
+    background-color: #6b7280;
+    color: white;
+}

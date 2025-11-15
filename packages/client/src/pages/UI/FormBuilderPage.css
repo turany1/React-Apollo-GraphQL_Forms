@@ -1,0 +1,89 @@
+.form-builder-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f7f9fc;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    font-family: 'Inter', sans-serif;
+}
+
+.builder-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #bfdbfe;
+    padding-bottom: 10px;
+}
+
+.link-back {
+    display: inline-flex;
+    align-items: center;
+    color: #3b82f6; 
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s;
+}
+
+.link-back:hover {
+    color: #1d4ed8;
+}
+
+.form-metadata-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+}
+
+.metadata-input-group {
+    margin-bottom: 1rem;
+}
+
+.metadata-input-group label {
+    display: block;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.metadata-input-group input[type="text"],
+.metadata-input-group textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    resize: none;
+}
+
+.metadata-input-group input[type="text"]:focus,
+.metadata-input-group textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    padding-top: 10px;
+}
+
+.error-message {
+    padding: 12px;
+    margin-bottom: 1.5rem;
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
+    border-radius: 8px;
+    font-weight: 500;
+}

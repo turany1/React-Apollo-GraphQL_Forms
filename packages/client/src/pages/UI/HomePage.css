@@ -1,0 +1,65 @@
+.homepage-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f7f9fc;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    font-family: 'Inter', sans-serif;
+}
+
+.homepage-title {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 2em;
+}
+
+.create-button-link {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+    margin-bottom: 2rem;
+}
+
+.create-button-link:hover {
+    background-color: #0056b3;
+}
+
+.section-title {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.message-loading, .message-error, .message-empty {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.message-loading {
+    color: #007bff;
+    font-style: italic;
+}
+
+.message-error {
+    color: red;
+    font-weight: bold;
+    background-color: #ffe0e0;
+    border: 1px solid #ffaaaa;
+}
+
+.message-empty {
+    font-style: italic;
+    color: #666;
+    background-color: #f0f0f0;
+}

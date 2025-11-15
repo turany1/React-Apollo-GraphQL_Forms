@@ -1,4 +1,3 @@
-// This schema must mirror the types in 'common'
 export const typeDefs =`
   enum QuestionType {
     TEXT

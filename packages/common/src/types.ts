@@ -1,4 +1,4 @@
-// Single source of truth for question types
+// Single source of truth
 export enum QuestionType {
   TEXT = 'TEXT',
   MULTIPLE_CHOICE = 'MULTIPLE_CHOICE',
@@ -6,13 +6,11 @@ export enum QuestionType {
   DATE = 'DATE',
 }
 
-// --- Types for Database (and for client) ---
-
 export interface Question {
   id: string;
   text: string;
   type: QuestionType;
-  options?: string[]; // Used for MC and CHECKBOX
+  options?: string[];
 }
 
 export interface Form {
@@ -24,8 +22,8 @@ export interface Form {
 
 export interface Answer {
   questionId: string;
-  value?: string;    // For TEXT, DATE, MULTIPLE_CHOICE
-  values?: string[]; // For CHECKBOX
+  value?: string; 
+  values?: string[]; 
 }
 
 export interface Response {
@@ -33,8 +31,6 @@ export interface Response {
   formId: string;
   answers: Answer[];
 }
-
-// --- Types for GraphQL Inputs (Mutation Arguments) ---
 
 export interface QuestionInput {
   text: string;

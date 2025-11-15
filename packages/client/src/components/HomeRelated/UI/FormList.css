@@ -1,0 +1,14 @@
+/* Контейнер для списку, може використовуватися для додавання загального відступу, якщо потрібно */
+.form-list-container {
+    padding: 0;
+    margin: 0;
+}
+
+/* Тут може бути логіка для сітки, якщо форми відображатимуться не вертикально */
+/* Наприклад: 
+.form-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+*/
