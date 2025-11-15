@@ -20,6 +20,7 @@ packages/client/dist/
 packages/client/.vite/
 
 packages/common/dist/
+packages/common/tsconfig.tsbuildinfo
 
 .DS_Store
 Thumbs.db
