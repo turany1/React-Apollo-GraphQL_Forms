@@ -1,4 +1,3 @@
-// Single source of truth imported from common 
 import { QuestionType } from '@react-apollo-graphql-forms/common'; 
 
 
