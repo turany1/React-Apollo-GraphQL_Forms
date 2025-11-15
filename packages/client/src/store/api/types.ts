@@ -1,5 +1,5 @@
 // Single source of truth for question types, imported from the common package
-import { QuestionType } from '@react-express-graphql-forms/common'; 
+import { QuestionType } from '@react-apollo-graphql-forms/common'; 
 
 // --- Core Types (Mirroring common/types for convenience, ensuring consistency) ---
 

@@ -4,7 +4,7 @@ import {
   Response,
   CreateFormArgs,
   SubmitResponseArgs
-} from '@react-express-graphql-forms/common';
+} from '@react-apollo-graphql-forms/common';
 import crypto from 'crypto';
 
 export const resolvers = {

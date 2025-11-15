@@ -4,7 +4,7 @@ import { HomePage } from './pages/HomePage.tsx';
 import { FormBuilderPage } from './pages/FormBuilderPage.tsx';
 import { FormFillerPage } from './pages/FormFillerPage.tsx';
 import { FormResponsesPage } from './pages/FormResponsesPage.tsx';
-import { QuestionType } from '@react-express-graphql-forms/common';
+import { QuestionType } from '@react-apollo-graphql-forms/common';
 
 const App: React.FC = () => {
   console.log('Shared type test:', QuestionType.TEXT);

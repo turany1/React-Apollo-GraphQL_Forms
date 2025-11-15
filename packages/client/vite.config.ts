@@ -8,7 +8,7 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      '@react-express-graphql-forms/common': path.resolve(__dirname, '../common/src/index.ts')
+      '@react-apollo-graphql-forms/common': path.resolve(__dirname, '../common/src/index.ts')
     }
   }
 })

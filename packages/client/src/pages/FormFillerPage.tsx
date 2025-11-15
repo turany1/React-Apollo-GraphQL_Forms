@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 // Із спільного пакета імпортуємо лише QuestionType
-import { QuestionType } from '@react-express-graphql-forms/common';
+import { QuestionType } from '@react-apollo-graphql-forms/common';
 // Решту типів імпортуємо з нашого нового api/types.ts
 import { useGetFormQuery, useSubmitResponseMutation } from '../store/api/apiSlice.ts';
 import { AnswerInput, Question } from '../store/api/types.ts';

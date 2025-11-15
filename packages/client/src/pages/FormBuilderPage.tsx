@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { QuestionType } from '@react-express-graphql-forms/common';
+import { QuestionType } from '@react-apollo-graphql-forms/common';
 import { useCreateFormMutation } from '../store/api/apiSlice.ts';
 import { Question } from '../store/api/types.ts'; 
 

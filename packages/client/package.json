@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-express-graphql-forms/common": "file:../common",
+    "@react-apollo-graphql-forms/common": "file:../common",
     "@reduxjs/toolkit": "^2.10.1",
     "@rtk-query/graphql-request-base-query": "^2.3.2",
     "graphql": "^16.12.0",

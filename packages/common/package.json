@@ -1,5 +1,5 @@
 {
-  "name": "@react-express-graphql-forms/common",
+  "name": "@react-apollo-graphql-forms/common",
   "version": "1.0.0",
   "description": "Shared types",
   "main": "dist/index.js",
