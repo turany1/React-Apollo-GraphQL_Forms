@@ -1,25 +1,22 @@
-// We can import types directly from 'common'!
-import { QuestionType } from 'common';
-import { useState } from 'react';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { HomePage } from './pages/HomePage.tsx';
+import { FormBuilderPage } from './pages/FormBuilderPage.tsx';
+import { FormFillerPage } from './pages/FormFillerPage.tsx';
+import { FormResponsesPage } from './pages/FormResponsesPage.tsx';
+import { QuestionType } from '@react-express-graphql-forms/common';
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  // This code proves we have access to the shared types
-  const exampleType = QuestionType.TEXT;
-  console.log('Shared type from common package:', exampleType);
+const App: React.FC = () => {
+  console.log('Shared type test:', QuestionType.TEXT);
 
   return (
-    <>
-      <h1>Google Forms Clone</h1>
-      <p>Shared types are working! Example type: {exampleType}</p>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/forms/new" element={<FormBuilderPage />} />
+      <Route path="/forms/:id/fill" element={<FormFillerPage />} />
+      <Route path="/forms/:id/responses" element={<FormResponsesPage />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
