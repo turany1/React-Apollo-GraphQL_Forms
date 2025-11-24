@@ -1,5 +1,5 @@
 import React from 'react';
-import './UI/CreateButton.css';
+import './styles/CreateButton.css';
 
 interface CreateButtonProps {
     isLoading: boolean;

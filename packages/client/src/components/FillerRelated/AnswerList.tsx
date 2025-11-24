@@ -1,8 +1,8 @@
 import React from 'react';
-import { Question } from '../store/api/types.ts'; 
-import { LocalAnswerState } from '../pages/FormFillerPage.tsx'; 
+import { Question , QuestionType} from '@react-apollo-graphql-forms/common';
+import { LocalAnswerState } from '../../pages/FormFillerPage.tsx';
 import AnswerCard from './AnswerCard.tsx';
-import './UI/AnswerList.css';
+import './styles/AnswerList.css';
 
 interface AnswerListProps {
     questions: Question[];

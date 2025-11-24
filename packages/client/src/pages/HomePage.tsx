@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FormList } from '../components/HomeRelated/FormList';
-import './UI/HomePage.css';
+import './styles/HomePage.css';
 
 export const HomePage: React.FC = () => {
     return (

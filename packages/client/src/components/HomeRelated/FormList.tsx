@@ -1,13 +1,7 @@
 import React from 'react';
 import { useGetFormsQuery } from '../../store/api/apiSlice.ts';
 import { FormListItem } from './FormListItem'; 
-import './UI/FormList.css'; 
-
-interface Form {
-    id: string;
-    title: string;
-    description?: string;
-}
+import './styles/FormList.css';
 
 function isFetchBaseQueryError(error: any): error is { error: string } {
     return typeof error === 'object' && error !== null && 'error' in error && typeof error.error === 'string';

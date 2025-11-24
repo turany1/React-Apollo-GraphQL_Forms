@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './UI/MessageBlock.css';
+import './styles/MessageBlock.css';
 
 interface MessageBlockProps {
     type: 'error' | 'loading' | 'info'; 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Question, Response } from '../store/api/types.ts';
-import { ResponseWithTimestamp } from '../pages/FormResponsesPage.tsx';
-import './UI/ResponseListItem.css';
+import { Question, Response } from '@react-apollo-graphql-forms/common';
+import { ResponseWithTimestamp } from '../../pages/FormResponsesPage.tsx';
+import './styles/ResponseListItem.css';
 
 interface ResponseListItemProps {
     response: ResponseWithTimestamp;

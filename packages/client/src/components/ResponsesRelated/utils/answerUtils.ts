@@ -1,4 +1,4 @@
-import { Response } from '../store/api/types.ts'; 
+import { Response } from '@react-apollo-graphql-forms/common';
 
 export const formatAnswer = (questionId: string, responseAnswers: Response['answers']): string => {
     const answer = responseAnswers.find(a => a.questionId === questionId);

@@ -5,7 +5,7 @@ import { useCreateFormMutation } from '../store/api/apiSlice.ts';
 import { Question } from '../store/api/types.ts'; 
 import { QuestionList, FormQuestion } from '../components/BuilderRelated/QuestionList.tsx';
 import { CreateButton } from '../components/BuilderRelated/CreateButton.tsx';
-import './UI/FormBuilderPage.css';
+import './styles/FormBuilderPage.css';
 
 type QuestionPayload = Omit<Question, 'id'>;
 

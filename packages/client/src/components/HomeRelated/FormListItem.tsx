@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './UI/FormListItem.css';
+import './styles/FormListItem.css';
 
 interface Form {
     id: string;

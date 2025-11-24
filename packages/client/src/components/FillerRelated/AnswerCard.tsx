@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { QuestionType } from '@react-apollo-graphql-forms/common';
-import { Question } from '../store/api/types.ts'; 
-import { LocalAnswerState } from '../pages/FormFillerPage.tsx'; 
-import './UI/AnswerCard.css';
+import { Question } from '@react-apollo-graphql-forms/common';
+import { LocalAnswerState } from '../../pages/FormFillerPage.tsx';
+import './styles/AnswerCard.css';
 
 interface AnswerCardProps {
     question: Question;

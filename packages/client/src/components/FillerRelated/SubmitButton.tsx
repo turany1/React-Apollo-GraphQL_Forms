@@ -1,5 +1,5 @@
 import React from 'react';
-import './UI/SubmitButton.css';
+import './styles/SubmitButton.css';
 
 interface SubmitButtonProps {
     isSubmitting: boolean;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { QuestionType } from '@react-apollo-graphql-forms/common';
 import { FormQuestion } from './QuestionList.tsx';
-import './UI/QuestionCard.css';
+import './styles/QuestionCard.css';
 
 interface QuestionCardProps {
     question: FormQuestion;

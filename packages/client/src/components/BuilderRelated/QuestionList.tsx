@@ -1,7 +1,7 @@
 import React, { useState, useCallback} from 'react';
 import { QuestionType } from '@react-apollo-graphql-forms/common';
 import QuestionCard from './QuestionCard.tsx';
-import './UI/QuestionList.css';
+import './styles/QuestionList.css';
 
 export interface FormQuestion {
     tempId: number;

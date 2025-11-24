@@ -7,7 +7,7 @@ import { AnswerInput, Question } from '../store/api/types.ts';
 import { AnswerList } from '../components/FillerRelated/AnswerList.tsx';
 import { SubmitButton } from '../components/FillerRelated/SubmitButton.tsx';
 
-import './UI/FormFillerPage.css';
+import './styles/FormFillerPage.css';
 
 export interface LocalAnswerState {
     questionId: string;
@@ -155,7 +155,7 @@ export const FormFillerPage: React.FC = () => {
         let errorMessage = 'Not Found.';
         if (formError) {
             try {
-                errorMessage = formError.data ? JSON.stringify(formError.data, null, 2) : String(formError);
+                errorMessage = formError ? JSON.stringify(formError, null, 2) : String(formError);
             } catch (e) {
                 errorMessage = String(formError);
             }

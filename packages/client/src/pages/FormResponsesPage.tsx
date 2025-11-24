@@ -1,4 +1,3 @@
-import React, { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useGetFormQuery, useGetFormResponsesQuery } from '../store/api/apiSlice.ts';
 import { Question, Response } from '../store/api/types.ts';
@@ -6,7 +5,7 @@ import { ResponseList } from '../components/ResponsesRelated/ResponseList.tsx';
 import { MessageBlock } from '../components/ResponsesRelated/MessageBlock.tsx';
 import { formatAnswer } from '../components/ResponsesRelated/utils/answerUtils.ts'; 
 
-import './UI/FormResponsesPage.css';
+import './styles/FormResponsesPage.css';
 
 export interface ResponseWithTimestamp extends Response {
     createdAt: string; 
